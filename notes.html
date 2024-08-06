@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Daniela Bazán | Notes</title>
+</head>
+
+<body>
+    <div class="canva"></div>
+
+    <div>
+        <header class="header">
+            <nav class="nav" id="navbar">
+                <ul class="nav-list">
+                    <li class="nav-li"><a class="main-link" href="index.html">Home</a></li>
+                    <li class="nav-li"><a class="main-link" href="about.html">About</a></li>
+                    <li class="nav-li"><a class="main-link" href="projects.html">Projects</a></li>
+                    <li class="nav-li"><a class="main-link active" href="notes.html">Notes</a></li>
+                    <li class="nav-li"><a class="main-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1 class="main-title">
+            <span class="main-title-span">
+                <span class="first-line">
+                    <span class="title-holder">
+                        <span>Notes.</span>
+                    </span>
+                </span>
+            </span>
+        </h1>
+
+        <div class="description">
+            <p class="description-p">
+                Explorations and thoughts on diverse topics of interest, including technology trends and emerging developments.
+            </p>
+        </div>
+
+        <div class="content">
+            <div class="notes">
+                <!-- Card 1 -->
+                <div class="project-wrap">
+                    <div class="card" onclick="openNote('note1')">
+                        <div class="card-column">
+                            <div class="card-row title">Ethical Considerations in Technology</div>
+                            <div class="card-row text">Navigating the complexities of AI, Data Privacy, and Algorithmic Bias
+                            </div>
+                        </div>
+                        <div class="card-column img">
+                            <img class="notes-img" src="./images/insignia.png" alt="Image 1">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="project-wrap">
+                    <div class="card" onclick="openNote('note2')">
+                        <div class="card-column">
+                            <div class="card-row title">The Convergence of Minds and Machines</div>
+                            <div class="card-row text">Interdisciplinary Influences on UI/UX Design and Human-Computer Interaction
+                            </div>
+                        </div>
+                        <div class="card-column img">
+                            <img class="notes-img" src="./images/cliente.png" alt="Image 1">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="project-wrap">
+                    <div class="card" onclick="openNote('note3')">
+                        <div class="card-column">
+                            <div class="card-row title">Code Green</div>
+                            <div class="card-row text">Sustainable Software Development for a Low-Carbon Future</div>
+                        </div>
+                        <div class="card-column img">
+                            <img class="notes-img" src="./images/emoji.png" alt="Image 1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Note Overlay -->
+        <div id="note-overlay" class="note-overlay">
+            <div class="note-content">
+                <button class="close-btn" onclick="closeNote()">X</button>
+                <div id="note1" class="note-text">
+                    <h1 class="note-title">Ethical Considerations in Technology</h1>
+                    <img src="./images/ethical-tech.jpg" alt="Note image">
+
+                    <p>Software engineers are increasingly realizing that their rapidly evolving field presents critical ethical challenges
+                    that extend far beyond technical considerations. Three key areas demand constant attention and thoughtful approach</p>
+                    
+                    <h1>AI Ethics</h1>
+                    <p>The power of artificial intelligence comes with great responsibility. AI systems can inadvertently perpetuate biases
+                    present in their training data. To combat this, it's important for developers to commit to creating transparent and
+                    explainable AI (XAI). This approach makes AI decision-making processes understandable to humans, allowing for the
+                    identification and correction of biases more effectively.</p>
+
+                    <p>The IEEE's guidelines for ethically aligned AI design are particularly helpful. These emphasize principles like human
+                    rights, well-being, data agency, and accountability. In practice, this means carefully considering the ethical
+                    implications at every stage of AI development, from conception to deployment and beyond.</p>
+
+                    <h1>Data Privacy</h1>
+                    <p>In our data-driven world, there's a constant balance between leveraging user data for enhanced services and protecting
+                    individual privacy. A "privacy by design" approach is crucial, integrating privacy considerations into the very
+                    architecture of IT systems from the outset.</p>
+
+                    <p>Data minimization is another important principle, ensuring only necessary data is collected and retained for specific,
+                    clearly defined purposes. Compliance with regulations like GDPR isn't just a legal requirement – it's an ethical
+                    imperative that should shape how systems are designed and implemented.</p>
+
+                    <h1>Algorithmic Bias</h1>
+                    <p>There's growing awareness of how algorithmic bias can perpetuate unfairness and discrimination. Whether it's facial
+                    recognition systems performing poorly on certain demographics or hiring algorithms discriminating against women, the
+                    consequences can be severe.</p>
+
+                    <p>To mitigate this, a multi-faceted approach is necessary. Diversity in development teams is crucial – it helps identify
+                    potential biases that might otherwise go unnoticed. It's also important to implement rigorous testing for bias,
+                    including fairness testing and adversarial debiasing techniques. Regular audits of algorithmic systems are essential,
+                    not just for technical performance, but to assess societal impact and fairness across different groups.</p>
+
+                    <p>Software engineers wield significant power to shape the digital world. With this power comes the responsibility to
+                    consider the ethical implications of their work deeply and consistently. By prioritizing AI ethics, data privacy, and
+                    algorithmic fairness, they can create technology that not only pushes boundaries but also upholds the values of
+                    fairness, transparency, and respect for human rights.</p>
+
+                </div>
+            
+                <div id="note2" class="note-text">
+                    <h1 class="note-title">The Convergence of Minds and Machines</h1>
+                    <img src="./images/minds.png" alt="Note image">
+
+                    <p>Software developers are increasingly fascinated by how insights from diverse fields are revolutionizing approaches to
+                    UI/UX design and human-computer interaction (HCI). This interdisciplinary approach is leading to more natural,
+                    efficient, and user-friendly interfaces.</p>
+
+                    <h1>Psychology in UI/UX Design</h1>
+                    <p>Cognitive psychology has become fundamental to modern design approaches. Understanding how the human mind processes
+                    information, makes decisions, and allocates attention can significantly enhance user experiences</p>
+
+                    <p>Cognitive load theory, which posits that working memory has limited capacity, is often applied in practice. This leads
+                    to a focus on simplicity, minimizing unnecessary elements and presenting information in digestible chunks. The Gestalt
+                    principles of perception – proximity, similarity, closure, and continuity – guide the organization of visual information
+                    to create coherent and intuitively understandable interfaces.</p>
+
+                    <p>Attention to users' mental models is crucial. As Don Norman explains in "The Design of Everyday Things," users come with
+                    preconceived notions of how systems should work. Aligning designs with these mental models can reduce the learning curve
+                    and enhance user satisfaction.</p>
+
+                    <h1>Neuroscience and User Experience</h1>
+                    <p>Advances in neuroscience have provided unprecedented insights into brain function, which prove invaluable in creating
+                    more intuitive interfaces. For instance, understanding how different visual stimuli activate various brain regions helps
+                    optimize information presentation.</p>
+
+                    <p>The concept of neuroplasticity – the brain's ability to reorganize itself – underscores the importance of consistency in
+                    design. As users interact with interfaces, their brains form new neural pathways. Maintaining consistency can leverage
+                    this to create more intuitive, learnable interfaces over time.</p>
+
+                    <p>The role of emotions in user experience, inspired by work like Antonio Damasio's somatic marker hypothesis, has led to a
+                    greater focus on creating positive emotional experiences in UI/UX designs, recognizing how crucial this is to user
+                    decision-making and overall satisfaction.</p>
+
+                    <h1>Biomimicry in Software Design</h1>
+                    <p>Nature, through millions of years of evolution, has developed highly efficient and adaptable systems. Emulating these
+                    natural designs and processes can solve complex problems in software design.</p>
+
+                    <p>Artificial neural networks, inspired by biological neural networks, have applications in areas like image and speech
+                    recognition. Genetic algorithms, mimicking natural selection, prove useful in automated program debugging and network
+                    design optimization.</p>
+
+                    <p>The concept of self-organization in biological systems has inspired the development of more autonomous and adaptive
+                    software systems. These can reconfigure themselves in response to environmental changes, much like living organisms
+                    adapt to their ecosystems.</p>
+
+                    <p>Integrating these insights from psychology, neuroscience, and biology into UI/UX design and HCI work enables the
+                    creation of experiences that resonate more deeply with users on both cognitive and emotional levels. This
+                    interdisciplinary approach continues to open up exciting possibilities for innovation, pushing the boundaries of what's
+                    possible in software design.</p>
+
+                    <p>As the gap between human cognition and digital interfaces continues to narrow, technology is moving towards feeling less
+                    like a tool and more like a natural extension of human capabilities. This not only enhances user experience but also
+                    paves the way for more intelligent, adaptive, and human-centered technologies.</p>
+                </div>
+
+                
+                <div id="note3" class="note-text">
+                    <h1 class="note-title">Code Green</h1>
+                    <img src="./images/code-green.jpg" alt="Note image">
+                    <p>Software engineers are becoming increasingly aware of the environmental impact of digital infrastructure. With the
+                    ubiquity of technology in modern life, it's crucial to consider the energy consumption and carbon footprint of software.
+                    Here's how sustainable software development can be approached:</p>
+
+                    <h1>Energy-Efficient Algorithms</h1>
+                    <p>The energy consumption of software is directly linked to the efficiency of its algorithms. Several approaches can create
+                    energy-efficient algorithms:</p>         
+
+                    <h2>Minimizing computational complexity</h2>
+                    <p>Big O notation can be used not just for time complexity, but also to analyze energy complexity. Implementing algorithms
+                    with lower complexity, like O(n log n), rather than O(n²) for large inputs, can reduce energy consumption.</p>
+
+                    <h2>Lazy evaluation</h2>
+                    <p>Where appropriate, implementing lazy evaluation to delay the computation of expressions until their values are needed
+                    can save energy by avoiding unnecessary computations.</p>
+
+                    <h2>Memoization</h2>
+                    <p>This technique caches the results of expensive function calls, reducing redundant computations and consequently, energy
+                    consumption.</p>
+
+                    <h2>Approximation algorithms</h2>
+                    <p>n scenarios where an exact solution isn't necessary, approximation algorithms can provide satisfactory results with
+                    significantly less computational effort.</p>
+
+                    <h2>Efficient data structures</h2>
+                    <p>Carefully choosing data structures based on specific project needs can save energy. For instance, using a hash table
+                    instead of an array for frequent lookup operations can be more energy-efficient.</p>
+
+                    <p>In mobile development, offloading computationally intensive tasks to the cloud can reduce device energy consumption,
+                    while being mindful of the energy costs of data transfer.</p>
+
+                    <h1>Green Hosting and Cloud Services</h1>
+                    <p>The choice of hosting provider can significantly impact a software application's carbon footprint. When selecting
+                    hosting providers or cloud services, considerations include:</p>
+
+                    <h2>Renewable energy usage</h2>
+                    <p>BPrioritizing providers that use a high percentage of renewable energy in their data centers.</p>
+                    
+                    <h2>Power Usage Effectiveness (PUE)</h2>
+                    <p>Looking for providers with PUE scores as close to 1.0 as possible, indicating efficient energy use.</p>
+                    
+                    <h2>Location</h2>
+                    <p>Where possible, choosing data centers in cooler climates, which often require less energy for cooling.</p>
+                    
+                    <h2>Carbon offset programs</h2>
+                    <p>Valuing providers that offer programs to neutralize the emissions associated with their services.</p>
+
+                    <p>In cloud-based applications, implementing efficient caching strategies, optimizing database queries, and using
+                    auto-scaling features to match resource allocation with demand can further reduce unnecessary energy consumption.</p>
+
+                    <h1>Lifecycle Assessment of Software</h1>
+                    <p>Considering the entire lifecycle of software is crucial to minimize its environmental impact:</p>
+
+                    <h2>Development phase</h2>
+                    <p>Being mindful of the energy consumption of development tools and environments. Remote collaboration tools can reduce
+                    travel-related emissions for team meetings.</p>
+                    
+                    <h2>Use phase</h2>
+                    <p>Optimizing for energy consumption during runtime and considering induced energy consumption, such as network traffic
+                    generated by the software.</p>
+                    
+                    <h2>End-of-life phase</h2>
+                    <p>Implementing strategies for efficient data deletion and hardware decommissioning, and designing for code reusability and
+                    long-term maintenance.</p>
+                    
+                    <p>Methodologies like the Greensoft Model and tools like the Software Carbon Intensity (SCI) specification can be helpful
+                    in assessing and improving software sustainability.</p>
+
+                    <p>By adopting these sustainable coding practices, software engineers can significantly reduce the carbon footprint of the
+                    digital infrastructure they help create. Sustainable software development often aligns with other desirable outcomes,
+                    such as improved performance, lower operating costs, and enhanced user experience.</p>
+
+                    <p>Software engineers have the power and responsibility to shape a more sustainable digital future. By integrating
+                    eco-friendly practices into development processes, they can create software that meets user needs while respecting the
+                    limits of our planet, contributing to the larger movement towards sustainable technology and addressing the global
+                    challenge of climate change.</p>
+
+
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <div>
+            <footer class="footer">
+                <div class="footer-name">
+                    <p class="cr-name">© 2024 Daniela Bazán</p>
+                </div>
+                <div class="footer-links">
+                    <ul class="ft-section">
+                        <li class="ft-tittle ft-link">Elswhere</li>
+                        <li class="ft-link"><a href="https://github.com/danielaebazan">Github</a></li>
+                        <li class="ft-link"><a href="https://www.linkedin.com/in/danielaebazan/">Linkedin</a></li>
+                    </ul>
+                    <ul class="ft-section">
+                        <li class="ft-tittle ft-link">Contact</li>
+                        <li class="ft-link"><a href="mailto:daniela.e.bazan@hotmail.com">Email</a></li>
+                        <li class="ft-link"><a href="./contact.html">Message</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+</body>
+</html>
