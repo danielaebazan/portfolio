@@ -25,12 +25,12 @@ mainLinks.forEach(function(link) {
 function openNote(noteId) {
     const noteOverlay = document.getElementById('note-overlay');
     const notes = document.querySelectorAll('.note-text');
-    notes.forEach(note => note.style.display = 'none'); // Hide all notes
-    document.getElementById(noteId).style.display = 'block'; // Show the selected note
-    noteOverlay.style.display = 'flex'; // Display the overlay
+    notes.forEach(note => note.style.display = 'none'); 
+    document.getElementById(noteId).style.display = 'block'; 
+    noteOverlay.style.display = 'flex'; 
 }
 
 function closeNote() {
     const noteOverlay = document.getElementById('note-overlay');
-    noteOverlay.style.display = 'none'; // Hide the overlay
+    noteOverlay.style.display = 'none'; 
 }
