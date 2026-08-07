@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="projects-data.js"></script>
+    <title>Daniela Bazán | Project</title>
+</head>
+
+<body>
+    <div class="canva"></div>
+
+    <div>
+        <header class="header">
+            <nav class="nav" id="navbar">
+                <ul class="nav-list">
+                    <li class="nav-li"><a class="main-link" href="index.html">Home</a></li>
+                    <li class="nav-li"><a class="main-link" href="about.html">About</a></li>
+                    <li class="nav-li"><a class="main-link" href="services.html">Services</a></li>
+                    <li class="nav-li"><a class="main-link active" href="projects.html">Projects</a></li>
+                    <li class="nav-li"><a class="main-link" href="notes.html">Notes</a></li>
+                    <li class="nav-li"><a class="main-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- TITLE -->
+        <h1 class="main-title project-title" id="project-title">
+            <span class="main-title-span">Project Name</span>
+        </h1>
+
+        <!-- VISIT SITE LINK -->
+        <div class="project-meta">
+            <a class="btn" href="#" target="_blank" rel="noopener noreferrer" id="project-site-link">Visit Site</a>
+        </div>
+
+        <!-- GALLERY: fixed height, click to open lightbox -->
+        <div class="project-gallery" id="project-gallery">
+            <div class="gallery-slider">
+                <button class="gallery-arrow gallery-arrow--prev" aria-label="Previous image">&#8592;</button>
+                <div class="gallery-track" id="gallery-track"></div>
+                <button class="gallery-arrow gallery-arrow--next" aria-label="Next image">&#8594;</button>
+            </div>
+            <div class="gallery-counter">
+                <span id="gallery-current">1</span> / <span id="gallery-total">0</span>
+            </div>
+        </div>
+
+        <!-- LIGHTBOX -->
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+            <div class="lightbox-backdrop"></div>
+
+            <button class="lightbox-close" aria-label="Close">&#10005;</button>
+            <button class="lightbox-arrow lightbox-arrow--prev" aria-label="Previous">&#8592;</button>
+            <button class="lightbox-arrow lightbox-arrow--next" aria-label="Next">&#8594;</button>
+
+            <div class="lightbox-content">
+                <img class="lightbox-img" id="lightbox-img" src="" alt="">
+            </div>
+        </div>
+
+        <!-- CONTENT BODY -->
+        <div class="project-body" id="project-body"></div>
+
+        <!-- BACK LINK -->
+        <div class="project-back">
+            <a class="btn" href="projects.html">← Back to Projects</a>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-name">
+                <p class="cr-name">© 2026 Daniela Bazán</p>
+            </div>
+            <div class="footer-links">
+                <ul class="ft-section">
+                    <li class="ft-tittle ft-link">Elswhere</li>
+                    <li class="ft-link"><a href="https://github.com/danielaebazan" target="_blank"
+                            rel="noopener noreferrer">Github</a></li>
+                    <li class="ft-link"><a href="https://www.linkedin.com/in/danielaebazan/" target="_blank"
+                            rel="noopener noreferrer">Linkedin</a></li>
+                </ul>
+                <ul class="ft-section">
+                    <li class="ft-tittle ft-link">Contact</li>
+                    <li class="ft-link"><a href="mailto:daniela.e.bazan@hotmail.com">Email</a></li>
+                    <li class="ft-link"><a href="./contact.html">Message</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // ── GALLERY & LIGHTBOX FUNCTIONS ──────────────────────
+        let slides = [];
+        let current = 0;
+
+        function showSlide(index) {
+            if (slides.length === 0) return;
+            slides[current].classList.remove('active');
+            current = (index + slides.length) % slides.length;
+            slides[current].classList.add('active');
+            document.getElementById('gallery-current').textContent = current + 1;
+        }
+
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        function openLightbox(index) {
+            lightboxImg.src = slides[index].querySelector('img').src;
+            lightboxImg.alt = slides[index].querySelector('img').alt;
+            lightbox.classList.add('open');
+            document.body.classList.add('lightbox-open');
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('open');
+            document.body.classList.remove('lightbox-open');
+        }
+
+        function lightboxNav(dir) {
+            showSlide(current + dir);
+            openLightbox(current);
+        }
+
+        // ── LOAD PROJECT DATA ─────────────────────────────────
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get('id');
+        const project = projects[id];
+
+        if (!project) {
+            document.getElementById('project-title').textContent = 'Project not found';
+        } else {
+            // Title
+            document.getElementById('project-title').textContent = project.title;
+            document.title = 'Daniela Bazán | ' + project.title;
+
+            // Visit Site button — hide if no URL
+            const siteLink = document.getElementById('project-site-link');
+
+            if (project.siteUrl) {
+                siteLink.href = project.siteUrl;
+                siteLink.target = '_blank';
+                siteLink.rel = 'noopener noreferrer';
+                siteLink.referrerPolicy = 'no-referrer';
+            } else {
+                siteLink.parentElement.style.display = 'none';
+            }
+
+            // Gallery
+            const track = document.getElementById('gallery-track');
+            const galleryEl = document.getElementById('project-gallery');
+
+            if (project.images && project.images.length > 0) {
+                track.innerHTML = project.images.map((src, i) => `
+                    <div class="gallery-slide ${i === 0 ? 'active' : ''}">
+                        <img class="gallery-img" src="${src}" alt="Screenshot ${i + 1}">
+                        <div class="gallery-hint">Click to expand</div>
+                    </div>
+                `).join('');
+                document.getElementById('gallery-total').textContent = project.images.length;
+
+                // Init gallery & lightbox NOW — after slides are in the DOM
+                slides = document.querySelectorAll('.gallery-slide');
+
+                document.querySelector('.gallery-arrow--prev').addEventListener('click', () => showSlide(current - 1));
+                document.querySelector('.gallery-arrow--next').addEventListener('click', () => showSlide(current + 1));
+
+                slides.forEach((slide, i) => {
+                    slide.addEventListener('click', () => openLightbox(i));
+                });
+
+                document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+                document.querySelector('.lightbox-backdrop').addEventListener('click', closeLightbox);
+                document.querySelector('.lightbox-arrow--prev').addEventListener('click', () => lightboxNav(-1));
+                document.querySelector('.lightbox-arrow--next').addEventListener('click', () => lightboxNav(1));
+
+            } else {
+                galleryEl.style.display = 'none';
+            }
+
+            // Sections
+            const body = document.getElementById('project-body');
+            body.innerHTML = project.sections.map(s => `
+                <div class="project-section">
+                    <h2 class="project-section-title">${s.title}</h2>
+                    <p>${s.content}</p>
+                </div>
+            `).join('');
+        }
+
+        // Keyboard support
+        document.addEventListener('keydown', (e) => {
+            if (lightbox.classList.contains('open')) {
+                if (e.key === 'ArrowLeft') lightboxNav(-1);
+                if (e.key === 'ArrowRight') lightboxNav(1);
+                if (e.key === 'Escape') closeLightbox();
+            } else {
+                if (e.key === 'ArrowLeft') showSlide(current - 1);
+                if (e.key === 'ArrowRight') showSlide(current + 1);
+            }
+        });
+
+        // Redirect scroll to lightbox when open
+            document.addEventListener('wheel', (e) => {
+                if (lightbox.classList.contains('open')) {
+                    e.preventDefault();
+                    document.querySelector('.lightbox-content').scrollTop += e.deltaY;
+                }
+            }, { passive: false });
+            
+    </script>
+
+</body>
+
+</html>

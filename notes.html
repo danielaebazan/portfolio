@@ -19,6 +19,7 @@
                 <ul class="nav-list">
                     <li class="nav-li"><a class="main-link" href="index.html">Home</a></li>
                     <li class="nav-li"><a class="main-link" href="about.html">About</a></li>
+                    <li class="nav-li"><a class="main-link" href="services.html">Services</a></li>
                     <li class="nav-li"><a class="main-link" href="projects.html">Projects</a></li>
                     <li class="nav-li"><a class="main-link active" href="notes.html">Notes</a></li>
                     <li class="nav-li"><a class="main-link" href="contact.html">Contact</a></li>
@@ -38,7 +39,7 @@
 
         <div class="description">
             <p class="description-p">
-                Explorations and thoughts on diverse topics of interest, including technology trends and emerging developments.
+                Thoughts on web strategy, structure, and why most websites don't work as well as they should.
             </p>
         </div>
 
@@ -48,12 +49,12 @@
                 <div class="project-wrap">
                     <div class="card" onclick="openNote('note1')">
                         <div class="card-column">
-                            <div class="card-row title">Ethical Considerations in Technology</div>
-                            <div class="card-row text">Navigating the complexities of AI, Data Privacy, and Algorithmic Bias
+                            <div class="card-row title">Your website is not a design project. It's a system.</div>
+                            <div class="card-row text">Structure, purpose, and why most websites create friction without realizing it.
                             </div>
                         </div>
                         <div class="card-column img">
-                            <img class="notes-img" src="./images/balance-scale.png" alt="Image 1">
+                            <img class="notes-img" src="./images/notes/cards/1.png" alt="Image 1">
                         </div>
                     </div>
                 </div>
@@ -62,12 +63,12 @@
                 <div class="project-wrap">
                     <div class="card" onclick="openNote('note2')">
                         <div class="card-column">
-                            <div class="card-row title">The Convergence of Minds and Machines</div>
-                            <div class="card-row text">Interdisciplinary Influences on UI/UX Design and Human-Computer Interaction
+                            <div class="card-row title">Why people don't take action online</div>
+                            <div class="card-row text">Why visitors leave, and how better structure creates direction.
                             </div>
                         </div>
                         <div class="card-column img">
-                            <img class="notes-img" src="./images/machine-minds.png" alt="Image 1">
+                            <img class="notes-img" src="./images/notes/cards/2.png" alt="Image 1">
                         </div>
                     </div>
                 </div>
@@ -76,202 +77,402 @@
                 <div class="project-wrap">
                     <div class="card" onclick="openNote('note3')">
                         <div class="card-column">
-                            <div class="card-row title">Code Green</div>
-                            <div class="card-row text">Sustainable Software Development for a Low-Carbon Future</div>
+                            <div class="card-row title">Strategy before execution</div>
+                            <div class="card-row text">Why successful digital systems start with strategy, not tools.</div>
                         </div>
                         <div class="card-column img">
-                            <img class="notes-img" src="./images/earth.png" alt="Image 1">
+                            <img class="notes-img" src="./images/notes/cards/3.png" alt="Image 1">
                         </div>
                     </div>
                 </div>
+
+                <!-- Card 4 -->
+                <div class="project-wrap">
+                    <div class="card" onclick="openNote('note4')">
+                        <div class="card-column">
+                            <div class="card-row title">Why clarity matters more than aesthetics</div>
+                            <div class="card-row text">Why clear messaging creates stronger digital experiences.</div>
+                        </div>
+                        <div class="card-column img">
+                            <img class="notes-img" src="./images/notes/cards/4.png" alt="Image 1">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="project-wrap">
+                    <div class="card" onclick="openNote('note5')">
+                        <div class="card-column">
+                            <div class="card-row title">How people actually navigate digital experiences</div>
+                            <div class="card-row text">How people move through digital experiences and make decisions.</div>
+                        </div>
+                        <div class="card-column img">
+                            <img class="notes-img" src="./images/notes/cards/5.png" alt="Image 1">
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Card 6 -->
+                <div class="project-wrap">
+                    <div class="card" onclick="openNote('note6')">
+                        <div class="card-column">
+                            <div class="card-row title">What makes a digital experience actually work</div>
+                            <div class="card-row text">The strategy behind websites, funnels, and systems that work together.</div>
+                        </div>
+                        <div class="card-column img">
+                            <img class="notes-img" src="./images/notes/cards/6.png" alt="Image 1">
+                        </div>
+                    </div>
+                </div>
+                
+
             </div>
         </div>
+
+        
 
         <!-- Note Overlay -->
         <div id="note-overlay" class="note-overlay">
             <div class="note-content">
                 <button class="close-btn" onclick="closeNote()">X</button>
                 <div id="note1" class="note-text">
-                    <h1 class="note-title">Ethical Considerations in Technology</h1>
-                    <img src="./images/ethical-tech.jpg" alt="Note image">
+                    <h1 class="note-title">Your website is not a design project. It's a system.</h1>
+                    <img src="./images/notes/main/systems.webp" alt="Note image">
 
-                    <p>Software engineers are increasingly realizing that their rapidly evolving field presents critical ethical challenges
-                    that extend far beyond technical considerations. Three key areas demand constant attention and thoughtful approach</p>
+                    <p>Most people approach their website like a creative task. Pick the colors, choose the fonts, add some photos, and call
+                        it done. And honestly, that's what a lot of web designers will deliver. But that's not what a website actually is.
+                    </p>
                     
-                    <h1>AI Ethics</h1>
-                    <p>The power of artificial intelligence comes with great responsibility. AI systems can inadvertently perpetuate biases
-                    present in their training data. To combat this, it's important for developers to commit to creating transparent and
-                    explainable AI (XAI). This approach makes AI decision-making processes understandable to humans, allowing for the
-                    identification and correction of biases more effectively.</p>
-
-                    <p>The IEEE's guidelines for ethically aligned AI design are particularly helpful. These emphasize principles like human
-                    rights, well-being, data agency, and accountability. In practice, this means carefully considering the ethical
-                    implications at every stage of AI development, from conception to deployment and beyond.</p>
-
-                    <h1>Data Privacy</h1>
-                    <p>In our data-driven world, there's a constant balance between leveraging user data for enhanced services and protecting
-                    individual privacy. A "privacy by design" approach is crucial, integrating privacy considerations into the very
-                    architecture of IT systems from the outset.</p>
-
-                    <p>Data minimization is another important principle, ensuring only necessary data is collected and retained for specific,
-                    clearly defined purposes. Compliance with regulations like GDPR isn't just a legal requirement – it's an ethical
-                    imperative that should shape how systems are designed and implemented.</p>
-
-                    <h1>Algorithmic Bias</h1>
-                    <p>There's growing awareness of how algorithmic bias can perpetuate unfairness and discrimination. Whether it's facial
-                    recognition systems performing poorly on certain demographics or hiring algorithms discriminating against women, the
-                    consequences can be severe.</p>
-
-                    <p>To mitigate this, a multi-faceted approach is necessary. Diversity in development teams is crucial – it helps identify
-                    potential biases that might otherwise go unnoticed. It's also important to implement rigorous testing for bias,
-                    including fairness testing and adversarial debiasing techniques. Regular audits of algorithmic systems are essential,
-                    not just for technical performance, but to assess societal impact and fairness across different groups.</p>
-
-                    <p>Software engineers wield significant power to shape the digital world. With this power comes the responsibility to
-                    consider the ethical implications of their work deeply and consistently. By prioritizing AI ethics, data privacy, and
-                    algorithmic fairness, they can create technology that not only pushes boundaries but also upholds the values of
-                    fairness, transparency, and respect for human rights.</p>
+                    <p>A website is a system. It has a job to do. And when it's not doing that job, no amount of beautiful design is going
+                        to fix it.</p>
+                    
+                    <h1>Design is the surface. Structure is the foundation.</h1>
+                    
+                    <p>Think about Apple.com. It's beautiful, yes. But what makes it actually work is everything underneath the aesthetics.
+                        Every page has a clear purpose. Every section guides you toward something specific. Nothing is there just to fill
+                        space or look good. The design serves the structure, not the other way around.</p>
+                    
+                    <p>Now think about the last time you landed on a website and left confused. Maybe it looked fine, even professional. But
+                        you couldn't figure out what they actually did, or who it was for, or what you were supposed to do next. That's a
+                        system problem. The design was doing its job. The structure wasn't.</p>
+                    
+                    <p>When a website isn't working, the problem is almost never the colors or the fonts. It's that the message isn't clear,
+                        the pages don't flow logically, or there's no obvious next step for the user to take. The surface looks fine. The
+                        foundation is broken.</p>
+                    
+                    <h1>What a system actually looks like.</h1>
+                    
+                    <p>A website that works as a system has a few things in common. It communicates what you do and who you do it for within
+                        the first few seconds. It guides the right people toward the right action without making them think too hard. It
+                        works consistently whether you're actively promoting it or not. And every single page has a reason to exist.</p>
+                    
+                    <p>That last one matters more than people realize. A lot of websites have pages that are just there because someone
+                        thought they should be. An about page that doesn't build trust. A services page that lists everything but explains
+                        nothing. A contact page with no real reason to reach out. Pages without purpose don't just waste space, they create
+                        friction. And friction is what makes people leave.</p>
+                    
+                    <h1>Start with purpose, not with visuals.</h1>
+                    
+                    <p>Before I open any design tool on a new project, I start with questions. What does this business actually need the
+                        site to do? Who is the person landing on it, and what do they need to feel confident enough to take the next step?
+                        What's the one thing they should walk away understanding?</p>
+                    
+                    <p>Once those questions have clear answers, design becomes the easy part. Because you're not decorating anymore. You're
+                        making intentional decisions that serve a purpose. Every section, every button, every line of copy has a reason to
+                        be there.</p>
+                    
+                    <p>That's the difference between a website that looks good in a portfolio screenshot and one that actually works for a
+                        business day after day. One is a design project. The other is a system.</p>
 
                 </div>
             
                 <div id="note2" class="note-text">
-                    <h1 class="note-title">The Convergence of Minds and Machines</h1>
-                    <img src="./images/minds.png" alt="Note image">
+                    <h1 class="note-title">Why people don't take action online</h1>
+                    <img src="./images/notes/main/User-action.avif" alt="Note image">
 
-                    <p>Software developers are increasingly fascinated by how insights from diverse fields are revolutionizing approaches to
-                    UI/UX design and human-computer interaction (HCI). This interdisciplinary approach is leading to more natural,
-                    efficient, and user-friendly interfaces.</p>
-
-                    <h1>Psychology in UI/UX Design</h1>
-                    <p>Cognitive psychology has become fundamental to modern design approaches. Understanding how the human mind processes
-                    information, makes decisions, and allocates attention can significantly enhance user experiences</p>
-
-                    <p>Cognitive load theory, which posits that working memory has limited capacity, is often applied in practice. This leads
-                    to a focus on simplicity, minimizing unnecessary elements and presenting information in digestible chunks. The Gestalt
-                    principles of perception – proximity, similarity, closure, and continuity – guide the organization of visual information
-                    to create coherent and intuitively understandable interfaces.</p>
-
-                    <p>Attention to users' mental models is crucial. As Don Norman explains in "The Design of Everyday Things," users come with
-                    preconceived notions of how systems should work. Aligning designs with these mental models can reduce the learning curve
-                    and enhance user satisfaction.</p>
-
-                    <h1>Neuroscience and User Experience</h1>
-                    <p>Advances in neuroscience have provided unprecedented insights into brain function, which prove invaluable in creating
-                    more intuitive interfaces. For instance, understanding how different visual stimuli activate various brain regions helps
-                    optimize information presentation.</p>
-
-                    <p>The concept of neuroplasticity – the brain's ability to reorganize itself – underscores the importance of consistency in
-                    design. As users interact with interfaces, their brains form new neural pathways. Maintaining consistency can leverage
-                    this to create more intuitive, learnable interfaces over time.</p>
-
-                    <p>The role of emotions in user experience, inspired by work like Antonio Damasio's somatic marker hypothesis, has led to a
-                    greater focus on creating positive emotional experiences in UI/UX designs, recognizing how crucial this is to user
-                    decision-making and overall satisfaction.</p>
-
-                    <h1>Biomimicry in Software Design</h1>
-                    <p>Nature, through millions of years of evolution, has developed highly efficient and adaptable systems. Emulating these
-                    natural designs and processes can solve complex problems in software design.</p>
-
-                    <p>Artificial neural networks, inspired by biological neural networks, have applications in areas like image and speech
-                    recognition. Genetic algorithms, mimicking natural selection, prove useful in automated program debugging and network
-                    design optimization.</p>
-
-                    <p>The concept of self-organization in biological systems has inspired the development of more autonomous and adaptive
-                    software systems. These can reconfigure themselves in response to environmental changes, much like living organisms
-                    adapt to their ecosystems.</p>
-
-                    <p>Integrating these insights from psychology, neuroscience, and biology into UI/UX design and HCI work enables the
-                    creation of experiences that resonate more deeply with users on both cognitive and emotional levels. This
-                    interdisciplinary approach continues to open up exciting possibilities for innovation, pushing the boundaries of what's
-                    possible in software design.</p>
-
-                    <p>As the gap between human cognition and digital interfaces continues to narrow, technology is moving towards feeling less
-                    like a tool and more like a natural extension of human capabilities. This not only enhances user experience but also
-                    paves the way for more intelligent, adaptive, and human-centered technologies.</p>
+                    <p>Most businesses think that getting people to their website is the hardest part. They spend time creating content,
+                        running ads, improving SEO, and finding new ways to bring more visitors in.</p>
+                    
+                    <p>But getting someone to visit your website is only the beginning. The harder part is what happens after they arrive. A
+                        person can be interested in your business and still leave without taking action because the website never helped
+                        them understand why they should continue.</p>
+                    
+                    <h1>The website explains the business, but not the value.</h1>
+                    
+                    <p>One of the biggest problems with business websites is that they are often written from the company's perspective.
+                        They talk about their experience, their process, and everything they offer, but they forget that the visitor is
+                        trying to answer a different question: "Is this the right solution for me?"</p>
+                    
+                    <p>A visitor doesn't know your business the way you do. They don't know why your process is different, what makes your
+                        service valuable, or why they should choose you over another option. The website has to create that understanding
+                        quickly. If someone has to work too hard to figure out why they should care, most people won't stay long enough to
+                        find out.</p>
+                    
+                    <h1>The journey is not clear.</h1>
+                    
+                    <p>A lot of websites have all the right pieces but still feel confusing. There is a homepage, a services page, an about
+                        page, and a contact form, but the experience doesn't really guide anyone anywhere.</p>
+                    
+                    <p>Think about walking into a physical store. You wouldn't expect to walk in and immediately understand every product,
+                        every option, and every possible next step without any guidance. A good store creates a natural path. Websites work
+                        the same way. The structure should help people understand what they need to know, build trust, and move toward the
+                        next step without feeling lost.</p>
+                    
+                    <h1>More information does not always create more clarity.</h1>
+                    
+                    <p>When a website isn't performing well, the first instinct is often to add more. More text. More sections. More
+                        services. More explanations. But adding more information does not automatically make something clearer.</p>
+                    
+                    <p>A website should not be a place where everything about a business is placed on one screen. It should be a system that
+                        introduces the right information at the right moment. Some things build trust. Some things answer questions. Some
+                        things encourage action. Knowing where each piece belongs is what creates a better experience.</p>
+                    
+                    <h1>The website gets attention, but it does not create movement.</h1>
+                    
+                    <p>A lot of websites look professional enough to make someone stop and look, but they don't create enough momentum for
+                        someone to take the next step. The design works. The branding works. The business might even be great. But the path
+                        from visitor to customer was never intentionally built.</p>
+                    
+                    <p>A website that works is not just one that people visit. It is one that helps the right people understand, trust, and
+                        take action. The goal is not to convince everyone. It is to make the experience clear enough that the people who are
+                        already looking for what you offer know exactly where to go next.</p>
                 </div>
 
                 
                 <div id="note3" class="note-text">
-                    <h1 class="note-title">Code Green</h1>
-                    <img src="./images/code-green.jpg" alt="Note image">
-                    <p>Software engineers are becoming increasingly aware of the environmental impact of digital infrastructure. With the
-                    ubiquity of technology in modern life, it's crucial to consider the energy consumption and carbon footprint of software.
-                    Here's how sustainable software development can be approached:</p>
-
-                    <h1>Energy-Efficient Algorithms</h1>
-                    <p>The energy consumption of software is directly linked to the efficiency of its algorithms. Several approaches can create
-                    energy-efficient algorithms:</p>         
-
-                    <h2>Minimizing computational complexity</h2>
-                    <p>Big O notation can be used not just for time complexity, but also to analyze energy complexity. Implementing algorithms
-                    with lower complexity, like O(n log n), rather than O(n²) for large inputs, can reduce energy consumption.</p>
-
-                    <h2>Lazy evaluation</h2>
-                    <p>Where appropriate, implementing lazy evaluation to delay the computation of expressions until their values are needed
-                    can save energy by avoiding unnecessary computations.</p>
-
-                    <h2>Memoization</h2>
-                    <p>This technique caches the results of expensive function calls, reducing redundant computations and consequently, energy
-                    consumption.</p>
-
-                    <h2>Approximation algorithms</h2>
-                    <p>n scenarios where an exact solution isn't necessary, approximation algorithms can provide satisfactory results with
-                    significantly less computational effort.</p>
-
-                    <h2>Efficient data structures</h2>
-                    <p>Carefully choosing data structures based on specific project needs can save energy. For instance, using a hash table
-                    instead of an array for frequent lookup operations can be more energy-efficient.</p>
-
-                    <p>In mobile development, offloading computationally intensive tasks to the cloud can reduce device energy consumption,
-                    while being mindful of the energy costs of data transfer.</p>
-
-                    <h1>Green Hosting and Cloud Services</h1>
-                    <p>The choice of hosting provider can significantly impact a software application's carbon footprint. When selecting
-                    hosting providers or cloud services, considerations include:</p>
-
-                    <h2>Renewable energy usage</h2>
-                    <p>BPrioritizing providers that use a high percentage of renewable energy in their data centers.</p>
+                    <h1 class="note-title">Strategy before execution</h1>
+                    <img src="./images/notes/main/strategy.jpg" alt="Note image">
+                    <p>Most businesses start building their online presence by choosing the tools first. They pick a website platform,
+                        create a landing page, connect an email system, run ads, and start adding pieces as they need them.</p>
                     
-                    <h2>Power Usage Effectiveness (PUE)</h2>
-                    <p>Looking for providers with PUE scores as close to 1.0 as possible, indicating efficient energy use.</p>
+                    <p>And that approach makes sense. Tools are visible. They are the things you can see, compare, and immediately start
+                        working on. But having all the right tools does not automatically create a system that works.</p>
                     
-                    <h2>Location</h2>
-                    <p>Where possible, choosing data centers in cooler climates, which often require less energy for cooling.</p>
+                    <p>A website, a funnel, and an automation can all be built correctly and still fail if they were never designed around a
+                        clear purpose.</p>
                     
-                    <h2>Carbon offset programs</h2>
-                    <p>Valuing providers that offer programs to neutralize the emissions associated with their services.</p>
-
-                    <p>In cloud-based applications, implementing efficient caching strategies, optimizing database queries, and using
-                    auto-scaling features to match resource allocation with demand can further reduce unnecessary energy consumption.</p>
-
-                    <h1>Lifecycle Assessment of Software</h1>
-                    <p>Considering the entire lifecycle of software is crucial to minimize its environmental impact:</p>
-
-                    <h2>Development phase</h2>
-                    <p>Being mindful of the energy consumption of development tools and environments. Remote collaboration tools can reduce
-                    travel-related emissions for team meetings.</p>
+                    <h1>The tools are not the strategy.</h1>
                     
-                    <h2>Use phase</h2>
-                    <p>Optimizing for energy consumption during runtime and considering induced energy consumption, such as network traffic
-                    generated by the software.</p>
+                    <p>Think about how many businesses have a website, a CRM, an email platform, and different marketing channels running at
+                        the same time, but none of them truly work together. Information gets lost. Leads are not followed up with.
+                        Customers have inconsistent experiences.</p>
                     
-                    <h2>End-of-life phase</h2>
-                    <p>Implementing strategies for efficient data deletion and hardware decommissioning, and designing for code reusability and
-                    long-term maintenance.</p>
+                    <p>The problem is not that they need more software. The problem is that the pieces were added without thinking about how
+                        they should connect.</p>
                     
-                    <p>Methodologies like the Greensoft Model and tools like the Software Carbon Intensity (SCI) specification can be helpful
-                    in assessing and improving software sustainability.</p>
+                    <p>A strong digital system is not created by collecting more tools. It is created by understanding what the business
+                        needs, what the customer journey looks like, and what needs to happen at each step.</p>
+                    
+                    <h1>Every part of the system should have a purpose.</h1>
+                    
+                    <p>A funnel is not just a landing page. It is the path someone takes from discovering a business to becoming a customer.
+                    </p>
+                    
+                    <p>An automation is not just a workflow. It is what keeps that experience moving after someone takes action.</p>
+                    
+                    <p>A website is not just a place where information lives. It is one part of the larger system that helps people
+                        understand, trust, and engage with a business.</p>
+                    
+                    <p>When each piece is built separately, the experience feels disconnected. When they are designed together, everything
+                        starts working toward the same goal.</p>
+                    
+                    <h1>Start with the journey, not the technology.</h1>
+                    
+                    <p>Before deciding what platform to use or what features to add, the most important questions are about the people
+                        moving through the system.</p>
+                    
+                    <p>Where are they coming from? What do they need to understand? What action should they take? What should happen after
+                        they take it?</p>
+                    
+                    <p>Once the journey is clear, the technology becomes much easier to choose because every tool has a role instead of just
+                        being another piece added to the stack.</p>
+                    
+                    <h1>The best systems are built intentionally.</h1>
+                    
+                    <p>A digital presence should not be a collection of disconnected pieces that happen to exist online.</p>
+                    
+                    <p>The strongest systems are built with every part supporting the next one. The website, funnel, automation, and data
+                        all work together because they were designed around the same strategy from the beginning.</p>
+                    
+                    <p>Execution is important. But without strategy, you are just building more things. With strategy, every piece has a
+                        reason to exist.</p>
+                    
+                </div>
 
-                    <p>By adopting these sustainable coding practices, software engineers can significantly reduce the carbon footprint of the
-                    digital infrastructure they help create. Sustainable software development often aligns with other desirable outcomes,
-                    such as improved performance, lower operating costs, and enhanced user experience.</p>
+                <div id="note4" class="note-text">
+                    <h1 class="note-title">Why clarity matters more than aesthetics</h1>
+                    <img src="./images/notes/main/clarity.jpg" alt="Note image">
+                    <p>Most businesses know that their online presence needs to look professional. They invest time into branding, visuals,
+                        photography, and design because they want people to take them seriously.</p>
+                    
+                    <p>And those things matter. A strong visual identity can create trust and make a business feel established. But
+                        aesthetics can only take you so far.</p>
+                    
+                    <p>Because people don't make decisions based only on how something looks. They make decisions based on whether they
+                        understand it.</p>
+                    
+                    <h1>A beautiful experience can still be unclear.</h1>
+                    
+                    <p>Think about the last time you visited a website, landing page, or online platform that looked impressive but left you
+                        confused. Maybe the design felt modern, but you couldn't immediately understand what the company offered or whether
+                        it was relevant to you.</p>
+                    
+                    <p>That is the difference between something that looks good and something that works.</p>
+                    
+                    <p>The problem is not usually the visuals. The problem is that the message was never clear enough to support the
+                        experience.</p>
+                    
+                    <p>When someone interacts with a business online, they are constantly trying to answer simple questions. What is this?
+                        Is this for me? Why should I trust it? What should I do next?</p>
+                    
+                    <h1>Clarity is what connects every piece together.</h1>
+                    
+                    <p>Clear messaging does not only affect the words on a page. It affects the entire system behind the experience.</p>
+                    
+                    <p>It influences the structure of a website, the flow of a funnel, the way an offer is presented, and even what happens
+                        after someone becomes a lead or customer.</p>
+                    
+                    <p>When the message is unclear, every other part has to work harder. The design has to compensate. The ads have to
+                        explain more. The sales process has to answer questions that should have been answered earlier.</p>
+                    
+                    <h1>More information does not always mean more understanding.</h1>
+                    
+                    <p>A common mistake businesses make is trying to communicate everything at once. They want to explain every service,
+                        every feature, every achievement, and every detail because they want people to see the full picture.</p>
+                    
+                    <p>But clarity is not about saying more. It is about knowing what matters most at each stage of the journey.</p>
+                    
+                    <p>The right information at the right moment creates confidence. Everything else can come later.</p>
+                    
+                    <h1>The goal is not to impress everyone.</h1>
+                    
+                    <p>A strong digital experience does not try to make every person interested. It helps the right people quickly recognize
+                        that they are in the right place.</p>
+                    
+                    <p>That is where strategy and design come together. The visuals create the first impression, but clarity is what turns
+                        that impression into understanding.</p>
+                    
+                    <p>Because the best systems are not the ones that simply get attention. They are the ones that make the next step feel
+                        obvious.</p>
+                </div>
 
-                    <p>Software engineers have the power and responsibility to shape a more sustainable digital future. By integrating
-                    eco-friendly practices into development processes, they can create software that meets user needs while respecting the
-                    limits of our planet, contributing to the larger movement towards sustainable technology and addressing the global
-                    challenge of climate change.</p>
+                <div id="note5" class="note-text">
+                    <h1 class="note-title">How people actually navigate digital experiences</h1>
+                    <img src="./images/notes/main/navigate.avif" alt="Note image">
+                    <p>Most businesses build their online presence by thinking about what they want people to see. They organize information
+                        around their services, their story, and everything they want potential customers to know.</p>
+                    
+                    <p>But people don't experience digital platforms that way.</p>
+                    
+                    <p>They don't arrive with the same knowledge the business has. They don't read every page, explore every option, or
+                        follow the exact path someone imagined when building it. They are trying to quickly understand whether they are in
+                        the right place and what they should do next.</p>
+                    
+                    <h1>People don't follow pages. They follow decisions.</h1>
+                    
+                    <p>When someone visits a website, clicks through a funnel, or interacts with an online experience, they are constantly
+                        making small decisions.</p>
+                    
+                    <p>Should I keep going? Does this apply to me? Do I trust this business? Is this worth my time?</p>
+                    
+                    <p>Every part of the experience influences those decisions. The message on the first screen. The order of information.
+                        The questions being answered. The action being requested.</p>
+                    
+                    <p>A successful digital experience understands that every step has a purpose. It is not just about moving someone from
+                        one page to another. It is about helping them move from uncertainty to confidence.</p>
+                    
+                    <h1>The journey matters more than the individual pieces.</h1>
+                    
+                    <p>A lot of businesses focus on individual parts of their online presence. They improve the website, create a new
+                        landing page, update their emails, or change their ads.</p>
+                    
+                    <p>But a single piece rarely determines the success of the whole experience.</p>
+                    
+                    <p>A great landing page does not help if the traffic coming to it is wrong. A strong offer does not help if the
+                        follow-up process is missing. A beautiful website does not help if visitors never understand what they should do
+                        next.</p>
+                    
+                    <p>The pieces only become powerful when they work together.</p>
+                    
+                    <h1>Good systems remove unnecessary decisions.</h1>
+                    
+                    <p>Every time someone has to stop and wonder where to go, what something means, or why they should continue, there is
+                        friction.</p>
+                    
+                    <p>The goal is not to remove every decision. People still need to choose whether a business is right for them. The goal
+                        is to remove the unnecessary confusion that makes that decision harder.</p>
+                    
+                    <p>This is why good digital experiences often feel simple. Not because they have less strategy behind them, but because
+                        the strategy has already done the hard work.</p>
+                    
+                    <h1>Designing for people means understanding how they think.</h1>
+                    
+                    <p>The best websites, funnels, and systems are not built around what a business wants to show. They are built around
+                        what people need to understand before they are ready to take action.</p>
+                    
+                    <p>Once you understand how people move through an experience, every decision becomes more intentional. The structure
+                        becomes clearer. The messaging becomes stronger. The technology has a purpose.</p>
+                    
+                    <p>Because a digital experience is not just something people look at. It is something they move through.</p>
+                </div>
 
-
+                <div id="note6" class="note-text">
+                    <h1 class="note-title">What makes a digital experience actually work</h1>
+                    <img src="./images/notes/main/success.avif" alt="Note image">
+                
+                <p>Most businesses think about their online presence as separate pieces. The website is one thing. The marketing is
+                    another. The CRM, emails, automations, and customer journey all live somewhere else.</p>
+                
+                <p>And that is usually where problems start.</p>
+                
+                <p>A business can have a great website, effective ads, and powerful tools, but if those pieces are not connected, the
+                    experience becomes fragmented. People fall through the gaps, opportunities are missed, and the business ends up
+                    spending more time fixing problems than improving the system.</p>
+                
+                <h1>The visible experience is only one layer.</h1>
+                
+                <p>When people think about a digital experience, they usually think about the things they can see. The website design.
+                    The landing page. The branding. The content.</p>
+                
+                <p>But behind every successful digital experience is a system working in the background.</p>
+                
+                <p>What happens when someone fills out a form? Where does that information go? How does the business follow up? What
+                    happens after someone becomes a customer? How does the team know what is working?</p>
+                
+                <p>Those details are not separate from the experience. They are part of it.</p>
+                
+                <h1>Every interaction creates the next step.</h1>
+                
+                <p>A website is not the end of the customer journey. It is often the beginning.</p>
+                
+                <p>Someone discovers a business, learns about an offer, decides whether they trust it, takes an action, and enters the
+                    next part of the process. That journey might include a funnel, an email sequence, a booking system, or an internal
+                    workflow.</p>
+                
+                <p>When those steps are intentionally connected, the experience feels simple for the customer and more manageable for
+                    the business.</p>
+                
+                <p>When they are not, even small problems start adding up.</p>
+                
+                <h1>More tools do not create better systems.</h1>
+                
+                <p>It is easy to think that adding another platform, automation, or feature will solve a business problem. But tools are
+                    only useful when they support a clear strategy.</p>
+                
+                <p>A complicated system with no direction is still a broken system.</p>
+                
+                <p>The goal is not to build the biggest stack or use the most advanced technology. The goal is to create something that
+                    supports the way the business actually operates.</p>
+                
+                <h1>The best systems work quietly in the background.</h1>
+                
+                <p>A strong digital experience does not require constant manual effort to keep moving. It helps businesses communicate
+                    better, organize information, follow up consistently, and create better experiences for the people they serve.</p>
+                
+                <p>The website, funnel, automation, and data all have different roles, but they work toward the same purpose.</p>
+                
+                <p>That is what makes a digital system effective. Not one individual tool or one perfect page, but the way everything
+                    connects together.</p>
                     
                 </div>
 
@@ -281,7 +482,7 @@
         <div>
             <footer class="footer">
                 <div class="footer-name">
-                    <p class="cr-name">© 2024 Daniela Bazán</p>
+                    <p class="cr-name">© 2026 Daniela Bazán</p>
                 </div>
                 <div class="footer-links">
                     <ul class="ft-section">
