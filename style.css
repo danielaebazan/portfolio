@@ -1212,7 +1212,7 @@ textarea {
     .header {
         left: 50%;
         transform: translateX(-50%);
-        width: calc(100% - 40px);
+        width: fit-content;
         margin: 0;
     }
 
