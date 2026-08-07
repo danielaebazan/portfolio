@@ -1,7 +1,7 @@
 // projects-data.js
 // Each project uses the folder name as its key (must match the URL ?id= parameter)
 // sections: array of { title, content } — add as many as needed per project
-// images: filenames inside images/projects/<key>/ — leave empty array until screenshots are ready
+// images: filenames inside images/projects/<key>/ 
 
 const projects = {
 
@@ -44,12 +44,16 @@ const projects = {
         cardImage: './images/browser.png',
         cardDescription: 'Modern website for an agriculture brand, built to showcase products and support content growth.',
         images: [
-             './images/projects/agricultural-website/1.png',
-             './images/projects/agricultural-website/2.png',
-             './images/projects/agricultural-website/3.png',
-             './images/projects/agricultural-website/4.png',
-             './images/projects/agricultural-website/5.png',
-             './images/projects/agricultural-website/6.png',
+             './images/projects/agricultural-website/1.webp',
+             './images/projects/agricultural-website/2.webp',
+             './images/projects/agricultural-website/3.webp',
+             './images/projects/agricultural-website/4.webp',
+             './images/projects/agricultural-website/5.webp',
+             './images/projects/agricultural-website/6.webp',
+             './images/projects/agricultural-website/7.webp',
+             './images/projects/agricultural-website/8.webp',
+             './images/projects/agricultural-website/9.webp',
+             './images/projects/agricultural-website/10.webp',
         ],
         sections: [
             {
@@ -77,13 +81,13 @@ const projects = {
         cardImage: './images/price-tag.png',
         cardDescription: 'WooCommerce store combining product pages, educational resources, and customer discovery tools.',
         images: [
-             './images/projects/ecommerce/1.png',
-             './images/projects/ecommerce/2.png',
-             './images/projects/ecommerce/3.png',
-             './images/projects/ecommerce/4.png',
-             './images/projects/ecommerce/5.png',
-             './images/projects/ecommerce/6.png',
-             './images/projects/ecommerce/7.png',
+             './images/projects/ecommerce/1.webp',
+             './images/projects/ecommerce/2.webp',
+             './images/projects/ecommerce/3.webp',
+             './images/projects/ecommerce/4.webp',
+             './images/projects/ecommerce/5.webp',
+             './images/projects/ecommerce/6.webp',
+             './images/projects/ecommerce/7.webp',
         ],
         sections: [
             {
@@ -115,10 +119,10 @@ const projects = {
         cardImage: './images/contact-form.png',
         cardDescription: 'Landing pages connected to CRM systems and automated follow-up workflows for different industries.',
         images: [
-            './images/projects/lead-generator/1.png',
-            './images/projects/lead-generator/2.png',
-            './images/projects/lead-generator/3.png',
-            './images/projects/lead-generator/4.png',
+            './images/projects/lead-generator/1.webp',
+            './images/projects/lead-generator/2.webp',
+            './images/projects/lead-generator/3.webp',
+            './images/projects/lead-generator/4.webp',
         ],
         sections: [
             {
@@ -183,10 +187,10 @@ const projects = {
         cardImage: './images/browser.png',
         cardDescription: 'Publication website with content publishing, subscription support, and full analytics setup for ongoing growth.',
         images: [
-            './images/projects/magazine/1.png',
-            './images/projects/magazine/2.png',
-            './images/projects/magazine/3.png',
-            './images/projects/magazine/4.png',
+            './images/projects/magazine/1.webp',
+            './images/projects/magazine/2.webp',
+            './images/projects/magazine/3.webp',
+            './images/projects/magazine/4.webp',
         ],
         sections: [
             {
