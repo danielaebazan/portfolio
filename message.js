@@ -17,7 +17,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         body: formData
     })
     .then(() => {
-        document.getElementById('responseMessage').innerText = 'Thank you for your message!';
+        document.getElementById('responseMessage').innerText = 'Thanks for reaching out! I’ll take a look at your message and get back to you soon.';
         document.getElementById('contactForm').reset();
     })
     .catch(error => {
