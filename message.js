@@ -17,6 +17,12 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         body: formData
     })
     .then(() => {
+
+        // Track successful contact form submission in GA4
+        gtag('event', 'generate_lead', {
+            form_name: 'contact_form'
+        });
+
         document.getElementById('responseMessage').innerText = 'Thanks for reaching out! I’ll take a look at your message and get back to you soon.';
         document.getElementById('contactForm').reset();
     })
